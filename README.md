@@ -3,6 +3,7 @@
 This repo is stitched together from these sources:
 
 - [Pscheidl/rust-kubernetes-operator-example]
+- [A Rust controller for Kubernetes]
 
 ## Creating a Kubernetes cluster
 
@@ -232,5 +233,6 @@ $ kubectl delete echo  echo-example
 [kind]: https://kind.sigs.k8s.io/
 [echo.rs]: src/echo.rs
 [Pscheidl/rust-kubernetes-operator-example]: https://github.com/Pscheidl/rust-kubernetes-operator-example
+[A Rust controller for Kubernetes]: https://blog.frankel.ch/start-rust/6/
 [echo-example.yaml]: k8s/echo-example.yaml
 [echoes.example.com.yaml]: k8s/echoes.example.com.yaml
