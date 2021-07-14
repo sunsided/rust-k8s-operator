@@ -1,0 +1,18 @@
+[package]
+name = "k8s-operator"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.7.0", features = ["macros", "rt-multi-thread"] }
+kube = { version = "0.57.0", default-features = true, features = ["derive"] } # Library for talking to Kubernetes API
+kube-derive = "0.57.0"
+kube-runtime = "0.57.0"
+k8s-openapi = { version = "0.12.0", default-features = false, features = ["v1_17"] } # Kube-rs depends on k8s-openapi
+futures = "0.3.15"
+serde = "1.0.126"
+serde_json = "1.0.64"
+schemars = "0.8.3"
+thiserror = "1.0.25"
